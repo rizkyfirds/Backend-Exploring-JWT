@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsIm5hbWUiOiJSaXpreSB1aHU3N3kiLCJlbWFpbCI6ImtpMkBnbWFpbC5jb20iLCJpYXQiOjE3MTU1OTEzODAsImV4cCI6MTcxNTU5MTM5NX0.4XgLagwn33zXdN5U18uK7xkGU0t4mnYOG_bA23OjD2E
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "kikiii",
+    "email": "kikiiii@gmail.com",
+    "password": "1222564",
+    "confirmPassword": "1222564"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "ki2@gmail.com",
+    "password": "1222564"
+}
+ 
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
